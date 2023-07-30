@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/foodimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/fast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Food Khaw"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/foodimg"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/foodimg"
+        app:layout_constraintTop_toBottomOf="@+id/foodimg" />
+
+    <EditText
+        android:id="@+id/usernameid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Enter your username..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/apptxt"
+        app:layout_constraintStart_toStartOf="@+id/apptxt"
+        app:layout_constraintTop_toBottomOf="@+id/apptxt" />
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your email..."
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/usernameid"
+        app:layout_constraintStart_toStartOf="@+id/usernameid"
+        app:layout_constraintTop_toBottomOf="@+id/usernameid" />
+
+    <EditText
+        android:id="@+id/passid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your password..."
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/emailid"
+        app:layout_constraintStart_toStartOf="@+id/emailid"
+        app:layout_constraintTop_toBottomOf="@+id/emailid" />
+
+    <EditText
+        android:id="@+id/conpassid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Enter your confirm password..."
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/passid"
+        app:layout_constraintStart_toStartOf="@+id/passid"
+        app:layout_constraintTop_toBottomOf="@+id/passid" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/btn_shape"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:id="@+id/registerbtn"
+        app:layout_constraintEnd_toEndOf="@+id/conpassid"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/conpassid"
+        app:layout_constraintTop_toBottomOf="@+id/conpassid" />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Already I have an account. Login!"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/registerbtn"
+        app:layout_constraintStart_toStartOf="@+id/registerbtn"
+        app:layout_constraintTop_toBottomOf="@+id/registerbtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
